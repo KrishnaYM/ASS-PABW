@@ -52,6 +52,11 @@
         alert("Buku tidak ditemukan.");
         return;
       }
+
+      if (jumlah > bukuDitemukan.jumlah) {
+        alert("Maaf, jumlah buku yang tersedia.");
+        return;
+      }
     </script>
   </body>
 </html>
