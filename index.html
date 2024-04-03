@@ -26,7 +26,16 @@
         <option value="aladin">Aladin</option>
         </select><br /><br />
 
-        <button onclick="pinjamBuku()">Pinjam Buku</button>
+      <button onclick="pinjamBuku()">Pinjam Buku</button>
     </div>
+
+    <script>
+      function pinjamBuku() {
+          // Ambil nilai input jumlah dan buku yang dipilih
+          let jumlah = parseInt(document.getElementById("jumlah").value);
+          let bukuTerpilih = document.getElementById("buku").value;
+      }
+    </script>
+
   </body>
 </html>
