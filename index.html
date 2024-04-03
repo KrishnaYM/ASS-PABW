@@ -31,11 +31,15 @@
 
     <script>
       function pinjamBuku() {
-          // Ambil nilai input jumlah dan buku yang dipilih
-          let jumlah = parseInt(document.getElementById("jumlah").value);
-          let bukuTerpilih = document.getElementById("buku").value;
+        // Ambil nilai input jumlah dan buku yang dipilih
+        let jumlah = parseInt(document.getElementById("jumlah").value);
+        let bukuTerpilih = document.getElementById("buku").value;
       }
+      let buku = [
+        { nama: "sherlock", jumlah: 2 },
+        { nama: "lupin", jumlah: 2 },
+        { nama: "aladin", jumlah: 2 },
+      ];
     </script>
-
   </body>
 </html>
