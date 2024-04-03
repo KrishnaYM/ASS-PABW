@@ -35,7 +35,7 @@
         let jumlah = parseInt(document.getElementById("jumlah").value);
         let bukuTerpilih = document.getElementById("buku").value;
       }
-      
+
       let buku = [
         { nama: "sherlock", jumlah: 2 },
         { nama: "lupin", jumlah: 2 },
@@ -44,6 +44,12 @@
 
       if (!jumlah || isNaN(jumlah)) {
         alert("Mohon isi jumlah buku yang ingin dipinjam.");
+        return;
+      }
+
+      let bukuDitemukan = buku.find((item) => item.nama === bukuTerpilih);
+      if (!bukuDitemukan) {
+        alert("Buku tidak ditemukan.");
         return;
       }
     </script>
